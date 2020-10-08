@@ -25,7 +25,7 @@ h4{
 
 .hero-banner{
 	background-color: #007FFF;
-	height:	100vh;
+	min-height:	100vh;
 	padding:50px 20px;
 	box-sizing: border-box;
 	position: relative;
@@ -53,8 +53,9 @@ h4{
 	background-size: 100%;
 	width:294px;
 	height:171px;
-	position: absolute; top: 117px; right: 89px;
+	position: absolute; top: 10%; right: 10%;
 	border-radius: 40px;
+	transform: rotate(15deg);
 }
 
 .shape2{
