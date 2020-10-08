@@ -9,6 +9,11 @@ h1{
 	font-size: 50px;
 }
 
+h2{
+	font-weight: 800;
+	font-size: 50px;
+}
+
 h3{
 	font-weight: bold;
 	font-size: 30px;
@@ -17,6 +22,12 @@ h3{
 h4{
 	font-weight: bold;
 	font-size: 20px;
+}
+
+p{
+	font-weight: bold;
+	font-size: 30px;
+	margin: 30px 0;
 }
 .wrapper{
 	width: 960px;
@@ -91,22 +102,105 @@ a.cta.alt, button.cta.alt{
 	box-shadow: 0 0 0 10px rgba(0,0,0,.15);
 }
 
+nav{
+	height:100px;
+	background-color: white;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
+	position: sticky;
+	top: 0;
+}
 
+nav .logo{
+	display: block;
+	width: 100px;
+	height: 46px;
+	position: absolute; top:50%; left: 0;
+	margin-top: -20px;
+	margin-left: 30px;
+	background-image: url(../img/rings.jpg);
+	background-size: 100%;
+	overflow:hidden;
+	text-indent: -999px;
+}
 
+nav ul{
+	padding: 0;
+	margin:0 20px 0 0;
+}
 
-/*<div class="hero-banner">
-		<div class="wrapper">
-			<h4><a href="https://facebook.com">Ken Zeta's</a> first website.</h4>
-			<h1>
-				Polygons &amp; <br>
-				Other Regular Shapes <br>
-				That I like
-			</h1>
-			<h3>It's circle, triangle &amp; square. <br> 
-			I like them.</h3>
-			<a class="cta alt" href="#more-info">Read More</a>  
-		</div>
-		<div class="shape1"></div>
-		<div class="shape2"></div>
-		<div class="shape3"></div>
-	</div>*/
+nav ul li{
+	padding: 0;
+	margin:0;
+	display: block;
+	float: right;
+}
+
+nav ul li a{
+	display: block;
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #111111;
+	text-decoration: none;
+	padding: 35px 10px;
+	line-height: 30px;
+}
+
+.more-info{
+	text-align: center;
+}
+
+.more-info p{
+	margin: 18px 40px;
+}
+
+.more-info h2{
+	margin: 50px 0 0;
+}
+
+.highlight{
+	background-color: #FFADF9;
+	color: #FF3300;
+	padding: 5px;
+	line-height: 50px;
+	display: inline;
+	font-weight: 800;
+}
+
+.sep{
+
+}
+
+.nb-list{
+	width: 470px;
+}
+
+.nb-list li{
+	height: 70px;
+	border-radius: 10px;
+	font-size: 40px;
+	color: white;
+	font-weight: bold;
+	display: block;
+}
+/*<div class="sep"></div>
+	<div class="story" id="story">
+		<ul class="nb-list">
+			<li class="blue">Rock 'n Roll</li>
+			<li class="gray">&nbsp;</li>
+			<li class="dragging">Square Offs</li>
+			<li class="yellow">Trigonometry</li>
+			<li class="red">Rad Hats</li>
+			<li class="salmon">Being Silly</li>
+		</ul>
+		<h3>Left: Things that are important<br>
+		Below:Story of Shapes</h3>
+		<p>Once upon a time there was a group of shapes. They were mostly black and rectangular. They were mean and very serious.</p>
+		<p>And so they kicked the 3 shapes that didn't conform out of their gang, which was called the Right Angled Gang.</p>
+		<p>And so these 3 shapes were very sad, but found great joy and comfort being around each other. They soon started having a lot of fun, started rocking and rolling, started being silly, and became the most well-known shape gang in the universe.</p>
+		<p>They even started making fun of squares and rectangles in what they like to call 'Square offs'!</p>
+		
+	</div>
+ 	<div class="sep"></div>*/
