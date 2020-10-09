@@ -84,7 +84,8 @@ p{
 	position: absolute; bottom: 74px; right: 109px;
 }
 
-a.cta, button.cta{
+a.cta,
+button.cta{
 	font-size: 30px;
 	font-weight: bold;
 	color: white;
@@ -94,6 +95,14 @@ a.cta, button.cta{
 	padding: 20px 30px;
 	border-radius: 10px;
 	text-decoration: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+a.cta:active,
+button.cta:active{
+	opacity: .7;
 }
 
 a.cta.alt, button.cta.alt{
@@ -108,6 +117,7 @@ nav{
 	box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
 
 nav .logo{
@@ -170,11 +180,26 @@ nav ul li a{
 }
 
 .sep{
+	width: 470px;
+	height: 10px;
+	background-color: #111111;
+	margin: 70px auto;
 
+}
+
+.story h3{
+	font-size: 40px;
+	font-weight: 800;
 }
 
 .nb-list{
 	width: 470px;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+	background-color: #EDEDED;
+	float: left;
+	margin: 0 20px 20px 0;
+	position: relative;
 }
 
 .nb-list li{
@@ -184,6 +209,60 @@ nav ul li a{
 	color: white;
 	font-weight: bold;
 	display: block;
+	margin-bottom: 20px;
+	padding: 6px 20px;
+	box-sizing: border-box;
+}
+
+.nb-list li.blue{background-color: #007FFF;}
+.nb-list li.gray{background-color: rgb(0, 0, 0, .1);}
+.nb-list li.yellow{
+	background-color: #FFD400;
+	color: #111111;
+}
+.nb-list li.red{background-color: #FF3300;}
+.nb-list li.salmon{background-color: #FA8072;}
+
+.nb-list li.dragging{
+	position: absolute;
+	top: 70px;
+	left: 70px;
+	right: -30px;
+	transform: rotate(6deg);
+	box-shadow: 0 2px 14px rgba(0,0,0,.3);
+}
+
+.nb-list li.dragging:after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 54px;
+	height:50px;
+	background:url(../img/hand.jpg) no-repeat 0 0;
+	background-size: 100%;
+	bottom: -30px;
+	left: 60%;
+}
+
+.gang-img{
+	display: block;
+	margin: 0 auto;
+}
+
+footer{
+	text-align: center;
+	color: rgba(0, 0, 0, .4);
+	font-size: 20px;
+	margin: 85px 0 45px;
+	font-weight: bold;
+}
+
+footer a{
+	color: rgba(0, 0, 0, .4);
+}
+
+.popup{
+	display: none;
 }
 /*<div class="sep"></div>
 	<div class="story" id="story">
